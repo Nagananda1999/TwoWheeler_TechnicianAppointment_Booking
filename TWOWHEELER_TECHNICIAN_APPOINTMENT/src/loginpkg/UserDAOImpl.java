@@ -73,12 +73,12 @@ public class UserDAOImpl implements UserDAO {
 		// TODO Auto-generated method stub
 		Connection con=Database.getConnection();
 		
-		String sql = "UPDATE Users set username=?, password=? where username=?";
+		String sql = "UPDATE Users set userid=?,username=?, password=? where username=?";
 		PreparedStatement ps=con.prepareStatement(sql);
 		
 		ps.setString(1, user.getUserId());
-		ps.setString(1, user.getUsername());
-		ps.setString(2, user.getPassword());
+		ps.setString(2, user.getUsername());
+		ps.setString(3, user.getPassword());
 		ps.setString(4,old_username);
 		
 		int result=ps.executeUpdate();

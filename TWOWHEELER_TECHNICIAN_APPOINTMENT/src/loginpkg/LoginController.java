@@ -20,7 +20,7 @@ public class LoginController {
 		do
 		{
 			System.out.println("1. Add new User");
-			System.out.println("2. Update User model");
+			System.out.println("2. Update User Details");
 			System.out.println("3. Delete User details");
 			System.out.println("4. View User details by UserId");
 			System.out.println("5. View all User details");
@@ -34,11 +34,10 @@ public class LoginController {
 					break;
 			case 1:System.out.println("Enter UserId: ");
 					userId=sc.next();
-					sc.nextLine();
 					System.out.println("Enter UserName: ");
-					username=sc.nextLine();
+					username=sc.next();
 					System.out.println("Enter password: ");
-					password=sc.nextLine();
+					password=sc.next();
 			
 					User user1 = new User(userId,username,password);
 					int records_inserted=userService.addUser(user1);

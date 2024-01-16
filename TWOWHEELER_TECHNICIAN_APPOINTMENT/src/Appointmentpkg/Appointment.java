@@ -15,7 +15,7 @@ public class Appointment {
 	BikeService bikeService = new BikeServiceImpl();	
 	
 	public Appointment(String appointmentId,String customerId,String serviceId,String technicianId,String bike_no){
-		
+		this.appointmentId=appointmentId;
 		this.customer = customerService.viewSingleRecord(customerId);
 		this.service = serviceService.viewSingleRecord(serviceId);
 		this.technician = technicianService.getTechnicianById(technicianId);

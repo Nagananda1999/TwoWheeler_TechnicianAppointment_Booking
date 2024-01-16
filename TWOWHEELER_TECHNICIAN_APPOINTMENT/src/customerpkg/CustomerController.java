@@ -100,7 +100,7 @@ public class CustomerController {
 				for(Customer customer_itr:customers )
 				{
 					System.out.println("CustomerId: "+ customer_itr.getCustomerId());
-					System.out.println("Model: "+ customer_itr.getName());
+					System.out.println("Name: "+ customer_itr.getName());
 					System.out.println("Address: "+ customer_itr.getAddress());
 					System.out.println("Contact No"+ customer_itr.getContact());
 					System.out.println("---------------------------------------------");

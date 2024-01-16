@@ -98,10 +98,10 @@ public class AppointmentController {
 				else
 				{
 					System.out.println("AppointmentId: "+ appointment4.getAppointementId());
-					System.out.println("Customer: "+ appointment4.getCustomer());
-					System.out.println("Service: "+ appointment4.getService());
-					System.out.println("Technician "+appointment4.getTechnician());
-					System.out.println("Bike"+appointment4.getBike());
+					System.out.println("Customer: "+ appointment4.getCustomer().getCustomerId());
+					System.out.println("Service: "+ appointment4.getService().getServiceId());
+					System.out.println("Technician "+appointment4.getTechnician().getTechnicianId());
+					System.out.println("Bike"+appointment4.getBike().getBike_no());
 				}
 				break;
 			case 5:
@@ -109,10 +109,10 @@ public class AppointmentController {
 				for(Appointment appointment_itr:appointments )
 				{
 					System.out.println("AppointmentId: "+ appointment_itr.getAppointementId());
-					System.out.println("Customer: "+ appointment_itr.getCustomer());
-					System.out.println("Service: "+ appointment_itr.getService());
-					System.out.println("Technician "+appointment_itr.getTechnician());
-					System.out.println("Bike"+appointment_itr.getBike());				
+					System.out.println("Customer: "+ appointment_itr.getCustomer().getCustomerId());
+					System.out.println("Service: "+ appointment_itr.getService().getServiceId());
+					System.out.println("Technician "+appointment_itr.getTechnician().getTechnicianId());
+					System.out.println("Bike"+appointment_itr.getBike().getBike_no());				
 					System.out.println("---------------------------------------------");
 				}
 				
